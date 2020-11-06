@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{CSS}
+
+<body onload="countDown()">
+    {MENU}
+
+
+    <!--BREADCRUMBS BEGIN-->
+    <section>
+        <div class="profile-banner" style="background:url(images/header.png) no-repeat center;">
+            <div class="container">
+                <div class="row" style="margin-top: 250px;">
+                    <div class="col-md-4 text-center">
+                        <img src="images/soccer/logoicafe.png" class="img-circle profile-avatar" alt="User avatar">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="menu-tournaments"><span class="ganeral-color2">Ganeral </span> <span class="text-white2">Open Qualifiers</span> </h1>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <section class="wrapper">
+                                    <section id="countdown-container" class="countdown-container">
+                                        <article id="js-countdown" class="countdown">
+                                            <section id="js-days" class="number"></section>
+                                            <section id="js-separator" class="separator">:</section>
+                                            <section id="js-hours" class="number"></section>
+                                            <section id="js-separator" class="separator">:</section>
+                                            <section id="js-minutes" class="number"></section>
+                                            <section id="js-separator" class="separator">:</section>
+                                            <section id="js-seconds" class="number"></section>
+                                        </article>
+                                    </section>
+                                </section>
+                            </div>
+                            <div class="col-md-8 text-center">
+                                <a href=""><img src="images/submit.png" alt="" width="60%"> </a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <!--BREADCRUMBS END-->
+
+
+    <!--TROPHEY ROOM END-->
+    <section class="trophey-room" style="background-image: url(images/bg_foot.png); padding-bottom:250px;">
+        <div class="container body-register">
+            <div class="row">
+                <div class="col-md-4 ">
+                    <h2></h2>
+                    <div class="text-center">
+                        <img src="{images}" alt="contact-office-img" class="img-circle" width="80%" id="logo-team"><br><br>
+                        <p style="color:gray">Logo Team</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h5 style="color:grey; text-align: right;">CAPTAIN/TEAM LEADER</h5>
+                    <div class="leave-comment-wrap">
+                        <form class="form-createteam" id="form-mainteam" enctype="multipart/form-data" method="POST" target="hidden_upload">
+                            {form_create_team}
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12" style="padding-left: 0px; padding-right: 0px;">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel invite-team">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <div class="row">
+                                        <div class="col-sm-8" style="margin-top:8px" id="headname-1"> {headname1} </div>
+                                        <div class="col-sm-4 text-right">
+                                            {headright1}
+                                        </div>
+                                    </div>
+
+
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <div class="col-md-12">
+                                        <h5 style="color:grey; text-align: right;">MEMBER 1</h5>
+                                        <div class="leave-comment-wrap">
+                                            <form class="form-createteam" id="add-member-form1" action="add_member.php" method="POST">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span >Name <i>*</i></span>
+                                                            <input type="text" name="name2" id="name2" value="{name2}" >
+                                                            <input type="hidden" name="team_id" value="{team_id}" />
+                                                            <input type="hidden" name="menber-position" value="{position1}" />
+                                                            <input type="hidden" name="menber-position" value="{position1}" />
+                                                            <input type="hidden" name="menberid" value="{memberid1}" />
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Sername <i>*</i></span>
+                                                            <input type="text" name="surname2" id="surname2" value="{surname2}">
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>ID Card Code <i>*</i></span>
+                                                            <input type="text" name="id_card2" id="id_card2" value="{id_card2}" placeholder="">
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Ingame Name <i>*</i></span>
+                                                            <input type="text" name="ingamename2" value="{ingame_name2}" id="ingamename2" >
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Garana ID <i>*</i></span>
+                                                            <input type="text" name="garena_id2" value="{garena_id2}" id="garena_id2" placeholder>
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>UID  <i>*</i></span>
+                                                            <input type="text" name="uid2" value="{uid2}" id="uid2">
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Email </span>
+                                                            <input type="email" name="email2" value="{email2}" id="email2">
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Tel  </span>
+                                                            <input type="text" name="tel2" value="{tel2}" id="tel2" >
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Facebook URL </span>
+                                                            <input type="text" name="facebook2" value="{facebook2}" id="facebook2">
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 text-right">
+                                                        {btn1}
+                                                    </div>
+
+
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel invite-team">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <div class="row">
+                                        <div class="col-sm-8" style="margin-top:8px" id="headname-2"> {headname2} </div>
+                                        <div class="col-sm-4 text-right">
+                                            {headright2}
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <div class="col-md-12">
+                                        <h5 style="color:grey; text-align: right;">MEMBER 2</h5>
+                                        <div class="leave-comment-wrap">
+                                            <form class="form-createteam" id="add-member-form2" action="add_member.php" method="POST">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span >Name <i>*</i></span>
+                                                            <input type="text" name="name2" id="name3"  value="{name3}" >
+                                                            <input type="hidden" name="team_id" value="{team_id}" />
+                                                            <input type="hidden" name="menber-position" value="{position2}" />
+                                                            <input type="hidden" name="menberid" value="{memberid3}" />
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Sername <i>*</i></span>
+                                                            <input type="text" name="surname2" id="surname3" value="{surname3}">
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>ID Card Code <i>*</i></span>
+                                                            <input type="text" name="id_card2" id="id_card3" value="{id_card3}" placeholder="">
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Ingame Name <i>*</i></span>
+                                                            <input type="text" name="ingamename2" value="{ingame_name3}" id="ingamename3" >
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Garana ID <i>*</i></span>
+                                                            <input type="text" name="garena_id2" value="{garena_id3}" id="garena_id3" placeholder>
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>UID  <i>*</i></span>
+                                                            <input type="text" name="uid2" value="{uid3}" id="uid3">
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Email </span>
+                                                            <input type="email" name="email2" value="{email3}" id="email3">
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Tel  </span>
+                                                            <input type="text" name="tel2" value="{tel3}" id="tel3" >
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Facebook URL </span>
+                                                            <input type="text" name="facebook2" value="{facebook3}" id="facebook3">
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 text-right">
+                                                        {btn2}
+                                                    </div>
+
+
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel invite-team">
+                            <div class="panel-heading" role="tab" id="heading3">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <div class="row">
+                                        <div class="col-sm-8" style="margin-top:8px" id="headname-3"> {headname3} </div>
+                                        <div class="col-sm-4 text-right">
+                                            {headright3}
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                                <div class="panel-body">
+                                    <div class="col-md-12">
+                                        <h5 style="color:grey; text-align: right;">MEMBER 3</h5>
+                                        <div class="leave-comment-wrap">
+                                            <form class="form-createteam" id="add-member-form3" action="add_member.php" method="POST">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span >Name <i>*</i></span>
+                                                            <input type="text" name="name2" id="name4"  value="{name4}" >
+                                                            <input type="hidden" name="team_id" value="{team_id}" />
+                                                            <input type="hidden" name="menber-position" value="{position3}" />
+                                                            <input type="hidden" name="menberid" value="{memberid4}" />
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Sername <i>*</i></span>
+                                                            <input type="text" name="surname2" id="surname4" value="{surname4}">
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>ID Card Code <i>*</i></span>
+                                                            <input type="text" name="id_card2" id="id_card4" value="{id_card4}" placeholder="">
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Ingame Name <i>*</i></span>
+                                                            <input type="text" name="ingamename2" value="{ingame_name4}" id="ingamename4" >
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Garana ID <i>*</i></span>
+                                                            <input type="text" name="garena_id2" value="{garena_id4}" id="garena_id4" placeholder>
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>UID  <i>*</i></span>
+                                                            <input type="text" name="uid2" value="{uid4}" id="uid4">
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Email </span>
+                                                            <input type="email" name="email2" value="{email4}" id="email4">
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Tel  </span>
+                                                            <input type="text" name="tel2" value="{tel4}" id="tel4" >
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Facebook URL </span>
+                                                            <input type="text" name="facebook2" value="{facebook4}" id="facebook4">
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 text-right">
+                                                        {btn3}
+                                                    </div>
+
+
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="panel invite-team">
+                            <div class="panel-heading" role="tab" id="heading4">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    <div class="row">
+                                        <div class="col-sm-8" style="margin-top:8px" id="headname-4"> {headname4} </div>
+                                        <div class="col-sm-4 text-right">
+                                            {headright4}
+                                        </div>
+                                    </div>
+
+                                </a>
+
+                            </div>
+                            <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                                <div class="panel-body">
+                                    <div class="col-md-12">
+                                        <h5 style="color:grey; text-align: right;">MEMBER 4</h5>
+                                        <div class="leave-comment-wrap">
+                                            <form class="form-createteam" id="add-member-form4" action="add_member.php" method="POST">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span >Name <i>*</i></span>
+                                                            <input type="text" name="name2" id="name5" value="{name5}" >
+                                                            <input type="hidden" name="team_id" value="{team_id}" />
+                                                            <input type="hidden" name="menber-position" value="{position4}" />
+                                                            <input type="hidden" name="menberid" value="{memberid5}" />
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Sername <i>*</i></span>
+                                                            <input type="text" name="surname2" id="surname5" value="{surname5}">
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>ID Card Code <i>*</i></span>
+                                                            <input type="text" name="id_card2" id="id_card5" value="{id_card5}" placeholder="">
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Ingame Name <i>*</i></span>
+                                                            <input type="text" name="ingamename2" value="{ingame_name5}" id="ingamename5" >
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Garana ID <i>*</i></span>
+                                                            <input type="text" name="garena_id2" value="{garena_id5}" id="garena_id5" placeholder>
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>UID  <i>*</i></span>
+                                                            <input type="text" name="uid2" value="{uid5}" id="uid5">
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Email </span>
+                                                            <input type="email" name="email2" value="{email5}" id="email5">
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Tel  </span>
+                                                            <input type="text" name="tel2" value="{tel5}" id="tel5" >
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="item">
+                                                            <label>
+                                                            <span>Facebook URL </span>
+                                                            <input type="text" name="facebook2" value="{facebook5}" id="facebook5">
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 text-right">
+                                                        {btn4}
+                                                    </div>
+
+
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    {FOOTER} {JS}
+    <script src="js/create-team.js"></script>
+</body>
+
+
+</html>

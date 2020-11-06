@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Simplon Mono';
+    src: url('SimplonMono-Medium.eot');
+    src: url('SimplonMono-Medium.eot?#iefix') format('embedded-opentype'),
+        url('SimplonMono-Medium.woff2') format('woff2'),
+        url('SimplonMono-Medium.woff') format('woff'),
+        url('SimplonMono-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{CSS}
+
+<body onload="countDown()">
+    {MENU}
+
+
+    <!--BREADCRUMBS BEGIN-->
+    <section>
+        <div class="profile-banner" style="background:url(images/header.png) no-repeat center;">
+            <div class="container">
+                <div class="row" style="margin-top: 250px;">
+                    <div class="col-md-4 text-center">
+                        <img src="images/soccer/logoicafe.png" class="img-circle profile-avatar" alt="User avatar">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1><span class="ganeral-color2">Ganeral </span> <span class="text-white2">Open Qualifiers</span> </h1>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <section class="wrapper">
+                                    <section id="countdown-container" class="countdown-container">
+                                        <article id="js-countdown" class="countdown">
+                                            <section id="js-days" class="number"></section>
+                                            <section id="js-separator" class="separator">:</section>
+                                            <section id="js-hours" class="number"></section>
+                                            <section id="js-separator" class="separator">:</section>
+                                            <section id="js-minutes" class="number"></section>
+                                            <section id="js-separator" class="separator">:</section>
+                                            <section id="js-seconds" class="number"></section>
+                                        </article>
+                                    </section>
+                                </section>
+                            </div>
+                            <div class="col-md-8 text-center">
+                                {create_team}
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <!--BREADCRUMBS END-->
+
+
+    <!--TROPHEY ROOM END-->
+    <section class="trophey-room" style="background-image: url(images/bg_foot.png); padding-bottom:250px;">
+        <div id="exTab2" class="container index-3">
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active">
+                    <a href="#1" data-toggle="tab">Overview</a>
+                </li>
+                <li><a href="#2" data-toggle="tab">Rules</a>
+                </li>
+                <li><a href="#3" data-toggle="tab">Prize</a>
+                </li>
+                <li><a href="#4" data-toggle="tab">Schedule</a>
+                </li>
+                <li><a href="#5" data-toggle="tab">Participants</a>
+                </li>
+            </ul>
+
+            <div class="tab-content ">
+                <div class="tab-pane active" id="1">
+                    <h5 class="ganeral-color">ข้อตกลงของระหว่างผู้เข้าแข่งขัน กับ WD BLACK FIFA Online Tournament Open Qualifier </h5>
+                    <p class="text-white">
+                        1. อายุของผู้เข้าสมัครต้องไม่ต่ำกว่า 17 ปี <br> 2. ค่า Fantasy ของทีมที่ใช้เข้าแข่งขันจะต้องมีไม่เกิน 185 FP <br> 3. กรุณาใส่ข้อมูลให้ครบต้องถ้วนตามที่กำหนดไว้ หากมีการปลอมแปลงเอกสารของผู้เข้าสมัคร ทางทีมงานจะตัดสิทธิ์ผู้เข้าแข่งขันทันที
+                        <br> 4. ผู้เข้าร่วมการแข่งขันทุกท่านจำเป็นที่จะต้องเข้าร่วม Discord ของทางรายการ เพราะทางทีมงานจะใช้ Discord สำหรับการติดต่อสื่อสาร แจ้งข่าวสาร แจ้งสายประกบการแข่งขัน และ Lobby การแข่งขันจะถูกจัดเตรียมไว้ใน Official Discord ของทางรายการ<br>                        5.ทางทีมงานอาจมีการแจ้งเปลี่ยนข้อมูลรูปแบบการแข่งขัน และข้อมูลของรางวัลตามความเหมาะสมโดยที่ไม่แจ้งล่วงหน้า<br> 6.คำตัดสินของทีมงานถือเป็นข้อสิ้นสุดทุกกรณี ผู้เข้าแข่งขันไม่สามารถที่จะโต้แย้งหรือโต้เถียงใดๆได้<br> 7. ทีมที่ชนะในรอบคัดเลือก(Qualifier)ทั้งหมด
+                        จะได้รับสิทธิ์ในการเข้าร่วมการแข่งขันในรอบ Playoffs (ออฟไลน์) ในวันที่ 30 - 31 มกราคม 2564 ที่ CentralWorld เพื่อหาผู้ชนะเลิศ<br>
+                    </p>
+                    <h5 class="ganeral-color">กฎกติกาการแข่งขันรอบคัดเลือก (ออนไลน์)</h5>
+                    <p class="text-white">
+                        1. ผู้เข้าแข่งขันแต่ละคนต้องใช้ “บัญชีผู้ใช้” ที่ตนเองทำการสมัครมาเท่านั้น และในการแข่งขันแต่ละแมตช์การแข่งขัน ผู้เข้าแข่งขันทั้งหมด ต้องมาเตรียมตัวตามเวลาทีมงานกำหนด<br> 2. หากทีมงานตรวจพบ หรือได้รับแจ้งว่ามีการสวมสิทธิการใช้บัญชีผู้เข้าร่วมแข่งขันโดยบุคคลอื่น
+                        ทางทีมงานมีสิทธิลงโทษแก่ผู้ทุจริต ทั้งผู้ที่ยอมให้สวมสิทธิ และผู้ที่สวมสิทธิ โดยการแบนบุคคลและไอดี ออกจากการแข่งขันทั้งหมด ภายในเกม FO4 เป็นระยะเวลา 1 ปี รวมถึงปรับแพ้และตัดสิทธิ์ออกจากการแข่งขันทันที<br> 3. UID และชื่อผู้จัดการที่ใช้ในการแข่งขันต้องตรงกับที่ใช้ลงทะเบียนการแข่งขันเท่านั้น
+                        ผู้เข้าแข่งขันห้ามเปลี่ยนแปลงชื่อผู้จัดการตลอดระยะเวลาการแข่งขัน <br> 4. แข่งขันในโหมด Arcade : Classic Mode โดยใช้ Fantasy ทีม ค่า FP ไม่เกินกว่า 185 FP<br> 5. แต่ละทีมที่ทำการสมัครการแข่งขันต้อง ส่งรายชื่อตัวแทนแต่ละทีม เพื่อแสดงตัวเป็นกัปตันทีม
+                        และเป็นผู้ประสานงานของแต่ละทีมให้กับทีมงานตามเวลาที่กำหนด
+                        <br> 6. นักเตะภายในทีมสามารถใช้นักเตะ Class หรือ ระดับเท่าใดก็ได้ไม่จำกัด <br> 7. ผู้เข้าแข่งขันสามารถใช้ Team Color และ ผู้จัดการทีม ได้ไม่จำกัด<br> 8. ในกรณีที่ผู้เข้าแข่งขันขาดการเชื่อมต่อในระหว่างการแข่งขัน ให้ผู้เข้าแข่งขันที่ยังอยู่ในเกมทำการบันทึกหลักฐานที่มีเวลาการแข่งขันล่าสุดที่หลุดออกจากเกม
+                        และเริ่มทำการแข่งขันใหม่ในเวลาและสกอร์ที่บันทึกไว้ โดยผู้ที่ยังสามารถเชื่อมต่ออยู่ในเกมจะเป็นฝ่ายเริ่มครองบอลนับจากในกรณีดังกล่าว<br> 9. ผลการแข่งขันอาจมีการเปลี่ยนแปลงได้ ขึ้นอยู่กับดุลยพินิจของผู้ตัดสิน ทาง Beyond Godlike ขอสงวนสิทธิในการเปลี่ยนแปลงคำตัดสิน
+                        ในระหว่างหรือหลังจากการแข่งขันเพื่อตรวจสอบว่าได้มีการดำเนินการตามขั้นตอนที่ถูกต้องเพื่อทำให้การตัดสินเป็นไปอย่างเป็นธรรมและมีสิทธิเปลี่ยนแปลงหรือยกเลิกคำตัดสินของผู้ตัดสินได้ และทางทีมงานสิทธิตัดสินชี้ขาดผลการตัดสินทั้งหมด <br>
+                    </p>
+
+                    <h5 class="ganeral-color">รูปแบบการแข่งขันรอบคัดเลือก (ออนไลน์)</h5>
+                    <p class="text-white"> 1. รอบการแข่งขันออนไลน์ ผู้เข้าแข่งขันต้องแข่งในรูปแบบ Best of 3 (“BO3”) ประเภท “ไม้ชนไม้” โดยทีมผู้เข้าแข่งขันที่สามารถชนะได้อย่างน้อย 2 เกมก่อนจึงจะถือว่าเป็นผู้ชนะ หากในการแข่งขันใดมีการเสมอกันภายในเวลา 90 นาที ทีมผู้เข้าร่วมการแข่งขันจะต้องทำการต่อเวลา
+                        และตัดสินด้วยลูกจุดโทษ ตามลำดับ<br> 2. ก่อนเริ่มการแข่งขัน กัปตันทีมของแต่ละทีมจะต้องแจ้งลำดับการแข่งขันของทีมตนเองก่อนเวลาแข่งขันเป็นเวลาอย่างน้อย 30 นาทีก่อนการแข่งขัน และจะไม่สามารถเปลี่ยนแปลงลำดับการแข่งขันดังกล่าวได้<br> 3.
+                        การแข่งขันทุกคู่ในรอบคัดเลือก ทีมผู้เข้าแข่งขันจะต้องทำการแข่งขันภายในเวลาที่ทางทีมงานกำหนดไว้เท่านั้น และไม่สามารถเปลี่ยนแปลงเวลา และรายชื่อผู้เข้าร่วมแข่งขันได้ในแต่ละแมตช์ในทุกกรณี<br> 4. หากมีผู้เข้าร่วมการแข่งขันคนใดภายในทีมไม่สามารถทำการแข่งขันได้
+                        เกมของผู้เข้าร่วมการแข่งขันดังกล่าวจะถูกปรับแพ้ทันที
+                        <br> 5. ทางทีมงานจะมีการเตือน และยืนยันลำดับการแข่งขันก่อนอย่างน้อย 24 ชั่วโมงก่อนการแข่งขัน และประกาศคู่การแข่งขันผ่านช่องทางที่ทีมงานกำหนด ในกรณีที่พบชื่อผู้จัดการทีม (ในเกม) และ UID ไม่ตรงกับที่ลงทะเบียนไว้ก่อนเริ่มการแข่งขัน
+                        ทีมงานมีสิทธิในการปรับแพ้ให้กับทีมที่ละเมิดกฎกติกาการแข่งขันทันที
+                        <br> 6. ระหว่างการแข่งขันผู้เข้าแข่งขันทุกคนจะต้องปฏิบัติตามกฎกติกาการแข่งขันของทาง Beyond Godlike รวมถึงข้อกำหนดเงื่อนไขใดๆ ที่ทางทีมงานของ Beyond Godlike ได้กำหนดไว้อย่างเคร่งครัด หากผู้เข้าแข่งขันรายใดฝ่าฝืนหรือไม่ปฏิบัติตาม
+                        ทางทีมงานผู้ดูแลการแข่งขันสามารถตัดสิทธิ์ผู้เข้าร่วมการแข่งขันดังกล่าวออกจากการแข่งขันและปรับให้ทีมผู้เข้าร่วมการแข่งขันดังกล่าวแพ้ทันที
+                        <br> 7. การเลือกฝั่งของผู้เข้าแข่งขันในแต่ละเกม ทีมงานจะเรียงตามลำดับตามเว็บไซต์ https://challonge.com/ โดยจะยึดตามสายการแข่งขันที่กำหนด โดยทีมที่อยู่ด้านบนของสายการแข่งขันจะอยู่ฝั่งซ้าย และทีมที่อยู่ด้านล่างของสายการแข่งขันจะอยู่ฝั่งขวา<br>
+                    </p>
+
+
+                </div>
+                <div class="tab-pane" id="2">
+                    <h4 class="ganeral-color">กฏกติกาในเกมฟีฟ่าออนไลน์ 4 :</h4>
+                    <h5 class="ganeral-color">การหยุดการแข่งขันตามแทคติก (Tactical Pause)</h5>
+                    <p class="text-white">
+                        1. ผู้เล่นสามารถขอหยุดการแข่งขันระหว่างเกมได้ 3 ครั้ง โดยมีเจตนาเพื่อปรับเปลี่ยนแทคติกเท่าน้้น <br> 2. การหยุดการแข่งขันตามแทคติกจะใช้เวลาไม่เกิน 30 วินาทีต่อครั้ง <br /> 3. ผู้เล่นต้องทำการเปลี่ยนตัวสำรอง, แผนตำแหน่ง หรือ ปรับเปลี่ยนแทคติก
+                        ในขณะที่หยุดการแข่งขันตามแทคติก
+                        <br> 4. ผู้เล่นสามารถขอหยุดการแข่งขันตามแทคติกในระหว่างที่บอลออกนอกสนาม, สถานการณ์ฟาวล์, การทุ่มบอลข้างสนาม, การเริ่มการแข่งขันใหม่ ณ จุดตั้งต้นกลางสนาม, ลูกตั้งเตะจากเขตประตู เท่านั้น หากฝ่าฝืน ผู้เล่นดังกล่าวจะถูกตักเตือน 1 รอบ
+                    </p>
+                    <h5 class="ganeral-color">การหยุดการแข่งขันทางเทคนิคในรอบออนไลน์ (Offline Technical Pause)</h5>
+                    <p class="text-white">
+                        1. ถ้าพบปัญหาระหว่างการแข่งขัน ผู้เล่นต้องแจ้งให้คณะกรรมการทราบ คณะกรรมการจะพิจารณา และตรวจสอบเรื่องการหยุดการแข่งขัน<br> 2. เพื่อนร่วมทีมของผู้เข้าแข่งขันสามารถชี้แจงให้คณะกรรมการหยุดการแข่งขันในเกมการแข่งขันอย่างเป็นทางการ ตามรายละเอียด
+                        ดังนี้
+                        <br> 2.1 ปัญหาแลค (Game Lag issue)<br> 2.1.1 หากมีผู้เล่นทีมใดทีมหนึ่งประสบปัญหาเกมแลค ผู้เล่นทีมนั้นสามารถร้องขอการเริ่มเกมใหม่ได้ก่อนถึงเวลาที่ 15 นาทีของเกม และผลสกอร์ต้องเป็น 0-0 เท่านั้น<br> 2.1.2 ผู้เล่นทั้งสองคนต้องยินยอมที่จะเริ่มการแข่งขันใหม่ทั้งคู่
+                        ในกรณีที่พบอาการแลค
+                        <br> 2.1.3 ถ้าผู้เล่นใดผู้เล่นนึงไม่ยินยอมในการเริ่มการแข่งขันใหม่ เกมจะถูกดำเนินการต่อ ณ เวลาที่หยุดไว้<br> 2.2 ผู้เข้าแข่งฝ่ายตรงข้ามใช้ภาษาที่ไม่เหมาะสม<br> ♦ ถ้าหากการร้องเรียนใดๆ ถูกตัดสินว่าเป็นเรื่องเท็จ ผู้เล่นนั้นๆจะถูกตักเตือน
+                        1 ครั้ง<br> ถ้ามีประเด็นใดนอกเหนือจากหัวข้อที่กล่าวมา ทางทีมงานขอสงวนสิทธิในการเปลี่ยนแปลงคำตัดสินในระหว่างหรือหลังจากการแข่งขันเพื่อตรวจสอบว่าได้มีการดำเนินการตามขั้นตอนที่ถูกต้องเพื่อทำให้การตัดสินเป็นไปอย่างเป็นธรรมและมีสิทธิเปลี่ยนแปลงหรือยกเลิกคำตัดสินของผู้ตัดสินได้
+                        และทาง Beyond Godlike สิทธิตัดสินชี้ขาดผลการตัดสินทั้งหมด
+                    </p>
+                    <h5 class="ganeral-color">บทลงโทษ</h5>
+                    <p class="text-white">
+                        • ตักเตือน 2 ครั้ง: ปรับแพ้เกมการแข่งขันนั้นๆ <br> • ตักเตือน 3 ครั้ง: ตัดสิทธิแมตช์การแข่งขันนั้นๆ
+                    </p>
+
+
+
+                </div>
+                <div class="tab-pane" id="3">
+                    <h3 class="ganeral-color">add clearfix to tab-content (see the css)</h3>
+                    <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel officiis odit neque, dicta obcaecati consequatur incidunt dolor nisi reprehenderit aspernatur voluptatibus minus sed veniam ipsum, omnis ratione iure voluptas voluptate.</p>
+                </div>
+                <div class="tab-pane" id="4">
+                    <h3 class="ganeral-color">add clearfix to tab-content (see the css)</h3>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nam nihil tempore perferendis eligendi maiores aspernatur. Perspiciatis assumenda consequatur quos doloremque ullam ipsa accusamus odio asperiores dolores vitae. Tempora
+                        alias ab sed? Alias tenetur voluptatum modi quae non vero at facilis veniam mollitia, ad placeat provident, fugit minus. Saepe tenetur quis consequuntur laboriosam, inventore accusamus aut perspiciatis suscipit quae pariatur expedita
+                        minima cupiditate provident earum dignissimos, eos quasi sint deserunt eligendi, recusandae et qui? Rerum velit iusto nemo, esse neque debitis veniam inventore facere nulla nihil perspiciatis consectetur amet corrupti ducimus exercitationem
+                        provident porro praesentium quis eaque autem totam accusantium.</p>
+                </div>
+                <div class="tab-pane" id="5">
+                    <h4 class="ganeral-color text-center">ทีมที่เข้าร่วมการแข่งขัน</h4>
+                    <div class="part-list">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-11 text-center">
+                                    <!-- BEGIN team -->
+                                    <div class="col-md-3">
+                                        <a href="#" class="item">
+                                            <span class="logo"><img src="{team.picdir}/{team.pic}" width="80" height="80" alt="team-logo"></span>
+                                            <span class="name">{team.name}</span>
+                                        </a>
+                                    </div>
+                                    <!-- END team -->
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    {FOOTER} {JS}
+</body>
+
+
+</html>

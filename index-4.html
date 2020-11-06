@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>WD FIFA Tournament by Beyond Godlike</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="fonts/stylesheet.css" rel="stylesheet">
+    <link href="css/library/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="dev-assets/preloader-default.css" rel="stylesheet" type="text/css" />
+    <link href="dev-assets/demo-switcher.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom_profile.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body onload="countDown()">
+
+    <!--MAIN MENU WRAP BEGIN-->
+    <div class="main-menu-wrap sticky-menu">
+        <div class="container">
+            <a href="index-2.html" class="custom-logo-link"><img src="images/soccer/wdblack.png" alt="logo" width="150" class="custom-logo"></a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#team-menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+            <nav class="navbar">
+                <div class="collapse navbar-collapse" id="team-menu">
+                    <ul class="main-menu nav">
+
+                        <li class="active"><a href="index-3.html"><span>Home</span></a></li>
+                        <li><a href="#"><span>Matches</span></a></li>
+                        <li><a href="#"><span>Teams</span></a></li>
+                        <li><a href="#"><span>Report result</span></a></li>
+                        <li><a href="#"><span>Live</span></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal"><span>Login</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--MAIN MENU WRAP END-->
+
+
+    <!--BREADCRUMBS BEGIN-->
+    <section>
+        <div class="profile-banner" style="background:url(images/header.png) no-repeat center;">
+            <div class="container">
+                <div class="row" style="margin-top: 250px;">
+                    <div class="col-md-4 text-center">
+                        <img src="images/soccer/logoicafe.png" class="img-circle profile-avatar" alt="User avatar">
+                    </div>
+                    <div class="col-md-8" >
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="menu-tournaments"><span class="ganeral-color">Ganeral </span> <span class="text-white">Open Qualifiers</span> </h1>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <section class="wrapper">
+                                    <section id="countdown-container" class="countdown-container">
+                                        <article id="js-countdown" class="countdown">
+                                            <section id="js-days" class="number"></section>
+                                            <section id="js-separator" class="separator">:</section>
+                                            <section id="js-hours" class="number"></section>
+                                            <section id="js-separator" class="separator">:</section>
+                                            <section id="js-minutes" class="number"></section>
+                                            <section id="js-separator" class="separator">:</section>
+                                            <section id="js-seconds" class="number"></section>
+                                        </article>
+                                    </section>
+                                </section>
+                            </div>
+                            <div class="col-md-8 text-center">
+                                <a href=""><img src="images/submit.png" alt="" width="60%"> </a>
+                            </div>
+                        </div>
+                       
+                    
+
+                    </div>
+                 
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <!--BREADCRUMBS END-->
+
+
+    <!--TROPHEY ROOM END-->
+    <section class="trophey-room" style="background-image: url(images/bg_foot.png); padding-bottom:250px;">
+        <div class="container body-register">
+            <div class="row">
+                <div class="col-md-4 ">
+                    <h2></h2>	
+                    <div class="text-center">
+                        <img  src="images/frame.png" alt="contact-office-img" width="80%"><br><br>
+                        <p style="color:gray" >Logo Team</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h5 style="color:grey; text-align: right;">CAPTAIN/TEAM LEADER</h5>	
+                    <div class="leave-comment-wrap">
+                        <form class="form-createteam">								
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="item">
+                                        <label>
+                                            <span class="text-white">Name <i>*</i></span>
+                                            <input type="text" name="name">
+                                        </label>
+                                    </div>	
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="item">
+                                        <label>
+                                            <span>Sername <i>*</i></span>
+                                            <input type="text" name="surname">
+                                        </label>
+                                    </div>	
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="item">
+                                        <label>
+                                            <span>ID Card Code <i>*</i></span>
+                                            <input type="text" name="id_card">
+                                        </label>
+                                    </div>	
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="item">
+                                        <label>
+                                            <span>Email  <i>*</i></span>
+                                            <input type="email" name="email">
+                                        </label>
+                                    </div>	
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="item">
+                                        <label>
+                                            <span>Tel  <i>*</i></span>
+                                            <input type="text" name="tel">
+                                        </label>
+                                    </div>	
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="item">
+                                        <label>
+                                            <span>Ingame Name <i>*</i></span>
+                                            <input type="text" name="ingamename">
+                                        </label>
+                                    </div>	
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="item">
+                                        <label>
+                                            <span>Garana ID <i>*</i></span>
+                                            <input type="text" name="garena_id">
+                                        </label>
+                                    </div>	
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="item">
+                                        <label>
+                                            <span>UID  <i>*</i></span>
+                                            <input type="text" name="uid">
+                                        </label>
+                                    </div>	
+                                </div>
+                         
+                                <div class="col-md-12">
+                                    <div class="item">
+                                        <label>
+                                            <span>Facebook URL  <i>*</i></span>
+                                            <input type="text" name="facebook">
+                                        </label>
+                                    </div>	
+                                </div>
+                                <div class="col-md-12 text-right">
+                                    <a href=""><img src="images/edit.png" alt="" width="120"> </a>
+                                    <a href=""><img src="images/save.png" alt="" width="120"> </a>
+                                </div>
+                             
+                             
+                             
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+      
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-12" style="padding-left: 0px; padding-right: 0px;">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel invite-team">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <img src="images/add.png" alt="add" width="35"> ADD MEMBER</a>
+                                </a>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <div class="col-md-12">
+                                    <h5 style="color:grey; text-align: right;">MEMBER 1</h5>	
+                                    <div class="leave-comment-wrap">
+                                        <form class="form-createteam">								
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span class="text-white">Name <i>*</i></span>
+                                                            <input type="text" name="name">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Sername <i>*</i></span>
+                                                            <input type="text" name="surname">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>ID Card Code <i>*</i></span>
+                                                            <input type="text" name="id_card">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Ingame Name <i>*</i></span>
+                                                            <input type="text" name="ingamename">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Garana ID <i>*</i></span>
+                                                            <input type="text" name="garena_id">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>UID  <i>*</i></span>
+                                                            <input type="text" name="uid">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Email </span>
+                                                            <input type="email" name="email">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Tel  </span>
+                                                            <input type="text" name="tel">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Facebook URL </span>
+                                                            <input type="text" name="facebook">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-12 text-right">
+                                                    <a href=""><img src="images/edit.png" alt="" width="120"> </a>
+                                                    <a href=""><img src="images/save.png" alt="" width="120"> </a>
+                                                </div>
+                                             
+                                             
+                                             
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="panel invite-team">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <img src="images/add.png" alt="add" width="35"> ADD MEMBER</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <div class="col-md-12">
+                                    <h5 style="color:grey; text-align: right;">MEMBER 2</h5>	
+                                    <div class="leave-comment-wrap">
+                                        <form class="form-createteam">								
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span class="text-white">Name <i>*</i></span>
+                                                            <input type="text" name="name">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Sername <i>*</i></span>
+                                                            <input type="text" name="surname">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>ID Card Code <i>*</i></span>
+                                                            <input type="text" name="id_card">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Ingame Name <i>*</i></span>
+                                                            <input type="text" name="ingamename">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Garana ID <i>*</i></span>
+                                                            <input type="text" name="garena_id">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>UID  <i>*</i></span>
+                                                            <input type="text" name="uid">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Email </span>
+                                                            <input type="email" name="email">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Tel  </span>
+                                                            <input type="text" name="tel">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Facebook URL </span>
+                                                            <input type="text" name="facebook">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-12 text-right">
+                                                    <a href=""><img src="images/edit.png" alt="" width="120"> </a>
+                                                    <a href=""><img src="images/save.png" alt="" width="120"> </a>
+                                                </div>
+                                             
+                                             
+                                             
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel invite-team">
+                        <div class="panel-heading" role="tab" id="heading3">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <img src="images/add.png" alt="add" width="35"> ADD MEMBER</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                            <div class="panel-body">
+                                <div class="col-md-12">
+                                    <h5 style="color:grey; text-align: right;">MEMBER 3</h5>	
+                                    <div class="leave-comment-wrap">
+                                        <form class="form-createteam">								
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span class="text-white">Name <i>*</i></span>
+                                                            <input type="text" name="name">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Sername <i>*</i></span>
+                                                            <input type="text" name="surname">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>ID Card Code <i>*</i></span>
+                                                            <input type="text" name="id_card">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Ingame Name <i>*</i></span>
+                                                            <input type="text" name="ingamename">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Garana ID <i>*</i></span>
+                                                            <input type="text" name="garena_id">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>UID  <i>*</i></span>
+                                                            <input type="text" name="uid">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Email </span>
+                                                            <input type="email" name="email">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Tel  </span>
+                                                            <input type="text" name="tel">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Facebook URL </span>
+                                                            <input type="text" name="facebook">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-12 text-right">
+                                                    <a href=""><img src="images/edit.png" alt="" width="120"> </a>
+                                                    <a href=""><img src="images/save.png" alt="" width="120"> </a>
+                                                </div>
+                                             
+                                             
+                                             
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="panel invite-team">
+                        <div class="panel-heading" role="tab" id="heading4">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    <img src="images/add.png" alt="add" width="35"> ADD MEMBER</a>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                            <div class="panel-body">
+                                <div class="col-md-12">
+                                    <h5 style="color:grey; text-align: right;">MEMBER 4</h5>	
+                                    <div class="leave-comment-wrap">
+                                        <form class="form-createteam">								
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span class="text-white">Name <i>*</i></span>
+                                                            <input type="text" name="name">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Sername <i>*</i></span>
+                                                            <input type="text" name="surname">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>ID Card Code <i>*</i></span>
+                                                            <input type="text" name="id_card">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Ingame Name <i>*</i></span>
+                                                            <input type="text" name="ingamename">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Garana ID <i>*</i></span>
+                                                            <input type="text" name="garena_id">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>UID  <i>*</i></span>
+                                                            <input type="text" name="uid">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Email </span>
+                                                            <input type="email" name="email">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Tel  </span>
+                                                            <input type="text" name="tel">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="item">
+                                                        <label>
+                                                            <span>Facebook URL </span>
+                                                            <input type="text" name="facebook">
+                                                        </label>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-md-12 text-right">
+                                                    <a href=""><img src="images/edit.png" alt="" width="120"> </a>
+                                                    <a href=""><img src="images/save.png" alt="" width="120"> </a>
+                                                </div>
+                                             
+                                             
+                                             
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         
+              </div>
+          </div>
+      </div>
+     
+
+    </section>
+    <footer style="background-color: black; padding:50px;" class="text-center">
+       <a href="https://beyondgodlike.net/" target="_blank"><img src="images/soccer/sponsor.png" alt="" width="25%"></a>
+    </footer>
+    <!--TROPHEY ROOM END-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" >
+        <div class="modal-content" style="background-image: url(images/soccer/modal-bg.jpg); background-repeat:no-repeat; background-size: cover; opacity: 0.5px;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×</button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Login/Registration</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                            <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="Login">
+                                <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                        Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="email1" placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1" class="col-sm-2 control-label">
+                                        Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password" required/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-primary btn-sm">
+                                            Submit</button>
+                                        <a href="javascript:;">Forgot your password?</a>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane" id="Registration">
+                                <form role="form" class="form-horizontal">
+                               
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                        Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="email" placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mobile" class="col-sm-2 control-label">
+                                        Mobile</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="mobile" placeholder="Mobile" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-sm-2 control-label">
+                                        Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="password" placeholder="Password" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-primary btn-sm">
+                                            Save & Continue</button>
+                                        <button type="button" class="btn btn-default btn-sm">
+                                            Cancel</button>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="OR" class="hidden-xs">
+                            OR</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row text-center sign-with">
+                            <div class="col-md-12">
+                                <h3>
+                                    Sign in with</h3>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="btn-group btn-group-justified">
+                                    <a href="#" class="btn btn-info">Facebook</a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <script type="text/javascript" src="js/library/jquery.js"></script>
+    <script type="text/javascript" src="js/library/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/library/bootstrap.js"></script>
+    <script type="text/javascript" src="js/library/jquery.sticky.js"></script>
+    <script type="text/javascript" src="js/library/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="js/library/jcarousel.connected-carousels.js"></script>
+    <script type="text/javascript" src="js/library/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/library/progressbar.js"></script>
+    <script type="text/javascript" src="js/library/jquery.bracket.min.js"></script>
+    <script type="text/javascript" src="js/library/chartist.js"></script>
+    <script type="text/javascript" src="js/library/Chart.js"></script>
+    <script type="text/javascript" src="js/library/fancySelect.js"></script>
+    <script type="text/javascript" src="js/library/isotope.pkgd.js"></script>
+    <script type="text/javascript" src="js/library/imagesloaded.pkgd.js"></script>
+
+    <script type="text/javascript" src="js/jquery.team-coundown.js"></script>
+    <script type="text/javascript" src="js/matches-slider.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/matches_broadcast_listing.js"></script>
+    <script type="text/javascript" src="js/news-line.js"></script>
+    <script type="text/javascript" src="js/match_galery.js"></script>
+    <script type="text/javascript" src="js/main-club-gallery.js"></script>
+    <script type="text/javascript" src="js/product-slider.js"></script>
+    <script type="text/javascript" src="js/circle-bar.js"></script>
+    <script type="text/javascript" src="js/standings.js"></script>
+    <script type="text/javascript" src="js/shop-price-filter.js"></script>
+    <script type="text/javascript" src="js/timeseries.js"></script>
+    <script type="text/javascript" src="js/radar.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/preloader.js"></script>
+    <script type="text/javascript" src="js/diagram.js"></script>
+    <script type="text/javascript" src="js/bi-polar-diagram.js"></script>
+    <script type="text/javascript" src="js/label-placement-diagram.js"></script>
+    <script type="text/javascript" src="js/donut-chart.js"></script>
+    <script type="text/javascript" src="js/animate-donut.js"></script>
+    <script type="text/javascript" src="js/advanced-smil.js"></script>
+    <script type="text/javascript" src="js/svg-path.js"></script>
+    <script type="text/javascript" src="js/pick-circle.js"></script>
+    <script type="text/javascript" src="js/horizontal-bar.js"></script>
+    <script type="text/javascript" src="js/gauge-chart.js"></script>
+    <script type="text/javascript" src="js/stacked-bar.js"></script>
+
+    <script type="text/javascript" src="js/library/chartist-plugin-legend.js"></script>
+    <script type="text/javascript" src="js/library/chartist-plugin-threshold.js"></script>
+    <script type="text/javascript" src="js/library/chartist-plugin-pointlabels.js"></script>
+
+    <script type="text/javascript" src="js/treshold.js"></script>
+    <script type="text/javascript" src="js/visible.js"></script>
+    <script type="text/javascript" src="js/anchor.js"></script>
+    <script type="text/javascript" src="js/landing_carousel.js"></script>
+    <script type="text/javascript" src="js/landing_sport_standings.js"></script>
+    <script type="text/javascript" src="js/twitterslider.js"></script>
+    <script type="text/javascript" src="js/champions.js"></script>
+    <script type="text/javascript" src="js/landing_mainnews_slider.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/video_slider.js"></script>
+    <script type="text/javascript" src="js/footer_slides.js"></script>
+    <script type="text/javascript" src="js/player_test.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="dev-assets/demo-switcher.js"></script>
+    <script>
+        // $('#myModal').modal('show');
+    </script>
+</body>
+  
+
+</html>

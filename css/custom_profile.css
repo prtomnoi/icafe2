@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+.countdown {
+    display: flex;
+    height: 10rem;
+    width: 20em;
+}
+
+.number,
+.separator {
+    display: block;
+    color: rgb(255, 255, 255);
+    height: 0rem;
+    font-size: 20px;
+    position: relative;
+    line-height: 5rem;
+    text-align: center;
+    width: 100%;
+}
+
+#js-days:after,
+#js-hours:after,
+#js-minutes:after,
+#js-seconds:after {
+    content: "DAYS";
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: -80px;
+    font-size: 12px;
+}
+
+#js-hours:after {
+    content: "HOURS";
+}
+
+#js-minutes:after {
+    content: "MINUTES";
+}
+
+#js-seconds:after {
+    content: "SECONDS";
+}
+
+.profile-banner {
+    width: 100%;
+    height: 600px;
+}
+
+.avatar-container {
+    height: 300px;
+    text-align: center;
+}
+
+.profile-avatar {
+    width: 250px;
+    margin: 0px auto;
+    /* border: 4px solid #f3f3f3; */
+}
+
+.profile-avatar2 {
+    width: 250px;
+    margin: 0px auto;
+    border: 4px solid #f3f3f3;
+}
+
+.ganeral-color {
+    color: #f15a29;
+    font-family: 'Kanit', sans-serif;
+}
+
+.text-white {
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+.ganeral-color2 {
+    color: #f15a29;
+}
+
+.text-white2 {
+    color: white;
+}
+
+
+/* .nav-tabs.nav-justified>li>a {
+    border-bottom: 0px;
+} */
+
+.tabbable {
+    margin: 30px;
+    height: 300px;
+    overflow: hidden;
+    border-bottom: 1px solid #d45500;
+}
+
+.nav-tabs {
+    margin: 0;
+}
+
+.tab-content {
+    padding: 30px;
+    height: 100%;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+
+.nav-tabs>.active>a,
+.nav-tabs>.active>a:hover,
+.nav-tabs>.active>a:focus {
+    border-color: #d45500;
+    border-bottom-color: transparent;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #d45500;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    background-color: #000;
+    /* border-bottom: none; */
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    border: 0;
+}
+
+.body-register {
+    background-color: #1b1e28;
+    border-radius: 12px;
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #0e0f14;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #2b2f37;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+div.invite-team {
+    width: 100%;
+    background-color: #1b1e28;
+    color: white;
+    padding: 5px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.trophey-room {
+    margin-top: -50px;
+}
+
+.index-3 {
+    margin-top: -20px;
+}
+
+.index-4 {
+    margin-top: 0px;
+}
+
+@media (max-width: 1000px) {
+    .body-register {
+        margin-top: 250px;
+    }
+    h1 {
+        text-align: center;
+    }
+    article {
+        text-align: center;
+    }
+    .profile-banner {
+        margin-top: -100px;
+    }
+    .index-3 {
+        margin-top: 250px;
+    }
+    .index-4 {
+        margin-top: 250px;
+    }
+    .tab-content {
+        border-top: 1px solid #fff;
+        border-top-left-radius: 13px;
+        border-top-right-radius: 13px;
+    }
+}
+
+.nav-tabs {
+    margin-bottom: 15px;
+}
+
+.sign-with {
+    margin-top: 25px;
+    padding: 20px;
+}
+
+div#OR {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #C2C2C2;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    float: right;
+    position: absolute;
+    right: -16px;
+    top: 40%;
+    z-index: 1;
+    background: #DFDFDF;
+}
+
+.sweet-alert h2 {
+    text-align: center;
+    color: #636262;
+}
+
+.btn-hidden {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}

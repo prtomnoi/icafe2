@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{CSS}
+
+<body>
+
+    {MENU}
+
+    <!--BREADCRUMBS BEGIN-->
+    <section>
+        <div class="profile-banner" style="background:url(images/header.png) no-repeat center;">
+            <div class="container">
+                <div class="row" style="margin-top: 150px; border: 1px solid #ccc; border-radius: 13px;">
+                    <div class="col-md-12">
+                        <h5><span class="ganeral-color">Ganeral </span> <span class="text-white">Open Qualifiers</span> > Profile </h5>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="{logo_team_profile}" class="img-circle profile-avatar" alt="User avatar"><br>
+                        <p>Logo Team</p>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="leave-comment-wrap">
+                            <form class="form-createteam">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="item">
+                                            <label>
+                                                <span class="text-white">Team Name <i>*</i></span>
+                                                <input type="text" name="name" value="{name_team}" readonly>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="item">
+                                            <label>
+                                                <span>Email <i>*</i></span>
+                                                <input type="text" name="surname" value="{email}" readonly>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="item">
+                                            <label>
+                                                <span>Tel <i>*</i></span>
+                                                <input type="text" name="id_card" value="{tel}" readonly>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <!--BREADCRUMBS END-->
+
+
+    <!--TROPHEY ROOM END-->
+    <section class="trophey-room" style="background-image: url(images/bg_foot.png); background-repeat:no-repeat;  background-color: black; padding-bottom:250px;">
+        <div id="exTab2" class="container index-4">
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active">
+                    <a href="#1" data-toggle="tab">Info</a>
+                </li>
+                <!-- <li><a href="#2" data-toggle="tab">My Teams</a> -->
+                </li>
+                <li><a href="#3" data-toggle="tab">Matches</a>
+                </li>
+                <!-- <li><a href="#4" data-toggle="tab">Activity</a> -->
+                </li>
+                <li><a href="#5" data-toggle="tab">Activity</a>
+                </li>
+            </ul>
+
+            <div class="tab-content ">
+                <div class="tab-pane active" id="1">
+                    <div class="text-right">
+                        <a href="create-team.php"><img src="images/edit.png" alt="" width="120"> </a>
+                    </div>
+                    <!-- BEGIN team -->
+                    <h5 class="ganeral-color">{team.position} {team.id}</h5>
+                    <h6 class="text-white">{team.name1} {team.surname1}</h6>
+                    <p class="text-white">ID Card : {team.id_card1}</p>
+                    <p class="text-white">Email : {team.email1}</p>
+                    <p class="text-white">Tel : {team1.tel1}</p>
+                    <p class="text-white">Garena ID : {team.garena_id1}</p>
+                    <p class="text-white">Ingame Name : {team.ingame_name1}</p>
+                    <p class="text-white">UID : {team.uid1}</p>
+                    <p class="text-white">Facebook URL : {team.facebook1}</p>
+                    <!-- END team -->
+
+                </div>
+                <div class="tab-pane" id="2">
+                    <h4 class="ganeral-color">Teams</h3>
+                        <div class="part-list">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <div class="col-md-3">
+                                            <a href="club-stats.html" class="item">
+                                                <span class="logo"><img src="images/soccer/team-logo1.png" width="80" height="80" alt="team-logo"></span>
+                                                <span class="name">Team 1</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <a href="club-stats.html" class="item">
+                                                <span class="logo"><img src="images/soccer/team-logo2.png" width="80" height="80" alt="team-logo"></span>
+                                                <span class="name">Team 2</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <a href="club-stats.html" class="item">
+                                                <span class="logo"><img src="images/soccer/team-logo3.png" width="80" height="80" alt="team-logo"></span>
+                                                <span class="name">Team 3</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <a href="club-stats.html" class="item">
+                                                <span class="logo"><img src="images/soccer/team-logo4.png" width="80" height="80" alt="team-logo"></span>
+                                                <span class="name">Team 4</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="tab-pane" id="3">
+                    <h3 class="ganeral-color">Coming Soon</h3>
+                    <div class="tab-pane" id="nationalcup">
+                        <div class="amateurs-main-match">
+                            <div class="title">National Cup - Round 1</div>
+                            <a href="matches.html" class="team">
+                                <span class="image"><img src="images/soccer/team-logo3.png" alt="main-match"></span>
+                                <span class="info">
+                                            <span class="name">Internacional</span>
+                                <span class="city">london</span>
+                                </span>
+                            </a>
+                            <div class="score">
+                                <span>0:0</span>
+                            </div>
+                            <a href="matches.html" class="team guest">
+                                <span class="info">
+                                            <span class="name">Arsenalp</span>
+                                <span class="city">Lyon</span>
+                                </span>
+                                <span class="image"><img src="images/soccer/team-logo4.png" alt="main-match"></span>
+                            </a>
+                            <div class="title">26 september / 8:45 PM</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="4">
+                    <h3 class="ganeral-color">add clearfix to tab-content (see the css)</h3>
+
+                    <div style="overflow-x:auto;">
+                        <table class="standing-full">
+                            <tbody>
+                                <tr>
+                                    <th>club</th>
+                                    <th>played</th>
+                                    <th>won</th>
+                                    <th>drawn</th>
+                                    <th>lost</th>
+                                    <th>gd</th>
+                                    <th>points</th>
+                                    <th>form</th>
+                                    <th>next</th>
+                                </tr>
+                                <tr>
+                                    <td class="up">
+                                        <i class="fa fa-caret-up" aria-hidden="true"></i> 1 <span class="team"><img src="images/soccer/team-logo1.png" width="30" height="30" alt="team-logo"> </span>Team 5
+                                    </td>
+                                    <td>11</td>
+                                    <td>8</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>+16</td>
+                                    <td class="points"><span>26</span></td>
+                                    <td class="form">
+                                        <span class="win">w</span>
+                                        <span class="drawn">d</span>
+                                        <span class="lose">l</span>
+                                        <span class="win">w</span>
+                                        <span class="win">w</span>
+                                    </td>
+                                    <td>
+                                        <a href="matches.html"><img src="images/soccer/team-logo2.png" width="30" height="30" alt="team-logo"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="down">
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="images/soccer/team-logo2.png" width="30" height="30" alt="team-logo"> </span>Team 3
+                                    </td>
+                                    <td>11</td>
+                                    <td>8</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>+16</td>
+                                    <td class="points"><span>26</span></td>
+                                    <td class="form">
+                                        <span class="win">w</span>
+                                        <span class="drawn">d</span>
+                                        <span class="lose">l</span>
+                                        <span class="win">w</span>
+                                        <span class="lose">l</span>
+                                    </td>
+                                    <td>
+                                        <a href="matches.html"><img src="images/soccer/team-logo1.png" width="30" height="30" alt="team-logo"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="down">
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="images/soccer/team-logo3.png" width="30" height="30" alt="team-logo"> </span>Team 4
+                                    </td>
+                                    <td>11</td>
+                                    <td>8</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>+16</td>
+                                    <td class="points"><span>26</span></td>
+                                    <td class="form">
+                                        <span class="lose">l</span>
+                                        <span class="drawn">d</span>
+                                        <span class="lose">l</span>
+                                        <span class="win">w</span>
+                                        <span class="win">w</span>
+                                    </td>
+                                    <td>
+                                        <a href="matches.html"><img src="images/soccer/team-logo4.png" width="30" height="30" alt=""></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="down">
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i> 1 <span class="team"><img src="images/soccer/team-logo4.png" width="30" height="30" alt="team-logo"> </span>Team 2
+                                    </td>
+                                    <td>11</td>
+                                    <td>8</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>+16</td>
+                                    <td class="points"><span>26</span></td>
+                                    <td class="form">
+                                        <span class="win">w</span>
+                                        <span class="drawn">d</span>
+                                        <span class="lose">l</span>
+                                        <span class="win">w</span>
+                                        <span class="lose">l</span>
+                                    </td>
+                                    <td>
+                                        <a href="matches.html"><img src="images/soccer/team-logo3.png" width="30" height="30" alt="team-logo"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="none">
+                                        <i class="fa fa-circle" aria-hidden="true"></i> 1 <span class="team"><img src="images/soccer/team-logo5.png" width="30" height="30" alt="team-logo"> </span>Team 1
+                                    </td>
+                                    <td>11</td>
+                                    <td>8</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>+16</td>
+                                    <td class="points"><span>26</span></td>
+                                    <td class="form">
+                                        <span class="win">w</span>
+                                        <span class="drawn">d</span>
+                                        <span class="lose">l</span>
+                                        <span class="win">w</span>
+                                        <span class="win">w</span>
+                                    </td>
+                                    <td>
+                                        <a href="matches.html"><img src="images/soccer/team-logo1.png" width="30" height="30" alt="team-logo"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane" id="5">
+                    <h3 class="ganeral-color">add clearfix to tab-content (see the css)</h3>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-11">
+                                <div class="main-lates-matches">
+                                    <a href="matches.html" class="item">
+                                        <span class="championship">National cup - quarterfinal</span>
+                                        <span class="teams-wrap">
+                                            <span class="team"><span><img src="images/soccer/team-logo1.png" alt="team-logo"></span><span>Valencia Valencia</span></span>
+                                        <span class="score"><span>3:2</span></span>
+                                        <span class="team1"><span>Internacional Internacional</span><span><img src="images/soccer/team-logo2.png" alt="team-logo"></span></span>
+                                        </span>
+                                        <span class="game-result">(5-4) penalties</span>
+                                    </a>
+                                    <a href="matches.html" class="item">
+                                        <span class="championship">National cup - quarterfinal</span>
+                                        <span class="teams-wrap">
+                                            <span class="team"><span><img src="images/soccer/team-logo3.png" alt="team-logo"></span><span>Valencia Valencia</span></span>
+                                        <span class="score"><span>3:2</span></span>
+                                        <span class="team1"><span>Internacional Internacional</span><span><img src="images/soccer/team-logo4.png" alt=""></span></span>
+                                        </span>
+                                        <span class="game-result">(5-4) penalties</span>
+                                    </a>
+                                    <a href="matches.html" class="item">
+                                        <span class="championship">National cup - quarterfinal</span>
+                                        <span class="teams-wrap">
+                                            <span class="team"><span><img src="images/soccer/team-logo5.png" alt="team-logo"></span><span>Valencia Valencia</span></span>
+                                        <span class="score"><span>3:2</span></span>
+                                        <span class="team1"><span>Internacional Internacional</span><span><img src="images/soccer/team-logo1.png" alt=""></span></span>
+                                        </span>
+                                        <span class="game-result">(5-4) penalties</span>
+                                    </a>
+                                    <a href="matches.html" class="item">
+                                        <span class="championship">National cup - quarterfinal</span>
+                                        <span class="teams-wrap">
+                                            <span class="team"><span><img src="images/soccer/team-logo1.png" alt="team-logo"></span><span>Valencia Valencia</span></span>
+                                        <span class="score"><span>3:2</span></span>
+                                        <span class="team1"><span>Internacional Internacional</span><span><img src="images/soccer/team-logo2.png" alt="team-logo"></span></span>
+                                        </span>
+                                        <span class="game-result">(5-4) penalties</span>
+                                    </a>
+                                    <a href="matches.html" class="item">
+                                        <span class="championship">National cup - quarterfinal</span>
+                                        <span class="teams-wrap">
+                                            <span class="team"><span><img src="images/soccer/team-logo3.png" alt="team-logo"></span><span>Valencia Valencia</span></span>
+                                        <span class="score"><span>3:2</span></span>
+                                        <span class="team1"><span>Internacional Internacional</span><span><img src="images/soccer/team-logo4.png" alt="team-logo"></span></span>
+                                        </span>
+                                        <span class="game-result">(5-4) penalties</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    {FOOTER} {JS}
+</body>
+
+
+</html>
