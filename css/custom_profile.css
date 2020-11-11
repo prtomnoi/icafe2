@@ -172,7 +172,9 @@ div.invite-team {
 .index-4 {
     margin-top: 0px;
 }
-
+.main-page{
+    margin-top:370px
+}
 @media (max-width: 1000px) {
     .body-register {
         margin-top: 250px;
@@ -196,6 +198,9 @@ div.invite-team {
         border-top: 1px solid #fff;
         border-top-left-radius: 13px;
         border-top-right-radius: 13px;
+    }
+    .main-page{
+        margin-top:150px
     }
 }
 
@@ -236,4 +241,16 @@ div#OR {
     border: none;
     cursor: pointer;
     overflow: hidden;
+}
+.modal-dialog-center {
+    margin-top: 25%;
+}
+body.modal-open .trophey-room{
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
+
 }

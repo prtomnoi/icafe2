@@ -3,11 +3,11 @@ session_start();
 ob_start();
 include "inc/common.initial.php";
 $id = date("U");
-$today = date("Y-m-d");
-	$row = Db::queryOne('SELECT * FROM account where email=? or fname=?',$_POST['email'],$_POST['fname']);	
+$today = date("Y-m-d H:i:s");
+	$row = Db::queryOne('SELECT * FROM account where email=? ',$_POST['email']);	
 	  if ($row[email] != "" || $row[fname] != "" )
 		{
-			$_SESSION['uid'] = $row[user_id];
+			$_SESSION['member-login'] = $row[aid];
 		}
 		else
 		{
@@ -19,11 +19,12 @@ $today = date("Y-m-d");
 				{
 					$email=$_POST['email'];
 				}
-				Db::query('INSERT INTO account SET user_id=?,fname=?,lname=?,email=?,date_regis=?'
-				,$id,$_POST['fname'],$_POST['lname'],$email,$today); 
+				Db::query('INSERT INTO account SET user_id=?,email=?,date_regis=?'
+				,$id,$email,$today); 
 				$lastId = Db::getLastId();
 
-			     $_SESSION['uid'] = $id;
+				$_SESSION['member-login'] = $lastId;
+			
 		
 		}
 

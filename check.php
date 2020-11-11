@@ -11,12 +11,12 @@ if($_SESSION['member-login'] == "") {
     <li>
     <a href="#other"><span> <i class="fa fa-user" aria-hidden="true"></i> '.substr($user["email"],0,13).'...</span></a>
     <ul>
-        <li><a href="profile.php"><span>Profile</span></a></li>
-        <li><a href="logout.php"><span>Logout</span></a></li>
+        <li><a href="profile"><span>Profile</span></a></li>
+        <li><a href="logout"><span>Logout</span></a></li>
     </ul>
   </li>';
 
-  $create_team = '<a href="create-team.php"><img src="images/create.png" alt="" width="60%"> </a>';
+  $create_team = '<a href="create-team"><img src="images/create.png" alt="" width="60%"> </a>';
  	
 }
 

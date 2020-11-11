@@ -917,3 +917,88 @@ function login() {
 function check_login() {
     swal("Error!", "Please Login first!", "error");
 }
+
+
+var bFbStatus = false;
+  var fbID = "";
+  var fbName = "";
+  var fbEmail = "";
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '811885576256340',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();   
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+
+function statusChangeCallback(response)
+{
+
+		if(bFbStatus == false)
+		{
+			fbID = response.authResponse.userID;
+
+			  if (response.status == 'connected') {
+				getCurrentUserInfo(response)
+			  } else {
+				FB.login(function(response) {
+				  if (response.authResponse){
+					getCurrentUserInfo(response)
+				  } else {
+					console.log('Auth cancelled.')
+				  }
+				}, { scope: 'email' });
+			  }
+		}
+
+
+		bFbStatus = true;
+}
+function getCurrentUserInfo(){
+	// FB.login(function(response) { 
+		FB.api('/me', 'GET', {fields: 'first_name,last_name,email,name,id,picture.width(150).height(150)'}, function(response) {
+			console.log(JSON.stringify(response));
+			         if(response.id!=null && response.name!=null){ // เธ–เนเธฒเธเธทเนเธญ เธเธฑเธ เนเธญเธ”เธต เนเธกเนเน€เธเนเธเธเนเธฒเธงเนเธฒเธ
+								
+                                // เธชเนเธเธเนเธญเธกเธนเธฅเนเธเนเธเนเธเธฒเธ เน€เธเนเธเธ•เธฃเธงเธเธชเธญเธเธเธฒเธฃเธฅเนเธญเธเธญเธดเธ เธซเธฃเธทเธญเธชเธฃเนเธฒเธเธเนเธญเธกเธนเธฅเธชเธกเธฒเธเธดเธเนเธซเธกเน
+                                 $.post("login_api.php",{  
+									fname:response.first_name,  
+									lname:response.last_name,  
+									email:response.email,  
+									id:response.id,  
+									img:response.picture.data.url,  
+									mode:'add'  
+								},function(data){
+
+										  swal("Success", "WELCOME TO WD FIFA ONLINE 4", "success");
+										  setTimeout(function(){  
+										  location.reload(); }, 3000);
+										 
+                                  
+									
+                                });
+                            }
+			
+		 });
+	
+	//  }, {scope:'email'});  
+}
+
+
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}

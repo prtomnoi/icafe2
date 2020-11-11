@@ -14,21 +14,51 @@ $SETPAGE = array(
 );
 
 
-$row1 = Db::queryOne('SELECT * FROM main_team,account Where uid = aid and aid=? ',$_SESSION['member-login']);
-if($row1['mt_id'] == ''){
-    echo '<script>
-    setTimeout(function() {
-            swal({
-                title: "Error 404",
-                text: "Please Create Team!",
-                type: "error"
-            }, function() {
-                window.location = "create-team.php";
-            });
-        }, 1000);
-    </script>';
+
+
+if($_GET['id']){
+    $row1 = Db::queryOne('SELECT * FROM main_team,account Where uid = aid and mt_id=? ',$_GET['id']);
+    if($row1['mt_id'] == ''){
+        echo '<script>
+        setTimeout(function() {
+                swal({
+                    title: "Error 404",
+                    text: "Not found Team!",
+                    type: "error"
+                }, function() {
+                    window.location = "create-team.php";
+                });
+            }, 1000);
+        </script>';
+    }
+    
+    $con = Db::queryAll('SELECT * FROM teams WHERE team_id =? order by tid  ASC',$_GET['id']);
+ 
+
+}else{
+    $row1 = Db::queryOne('SELECT * FROM main_team,account Where uid = aid and aid=? ',$_SESSION['member-login']);
+    if($row1['mt_id'] == ''){
+        echo '<script>
+        setTimeout(function() {
+                swal({
+                    title: "Error 404",
+                    text: "Please Create Team!",
+                    type: "error"
+                }, function() {
+                    window.location = "create-team.php";
+                });
+            }, 1000);
+        </script>';
+    }
+    $con = Db::queryAll('SELECT * FROM teams WHERE team_id =? order by tid  ASC',$row1['mt_id']);
+    
+
 }
-$con = Db::queryAll('SELECT * FROM teams WHERE team_id =? order by tid  ASC',$row1['mt_id']);
+if($_SESSION['member-login'] == $row1['uid']){
+    $btn = '<a href="create-team"><img src="images/edit.png" alt="" width="120"> </a>';
+}else{
+    $btn = '';
+}
 
 $j = 0;
 for($i=0; $i<count($con); $i++)
@@ -79,6 +109,7 @@ $template->assign_vars(array(
     "email1" => $con1['email'],
     "tel1" => $con1['tel'],
     "facebook1" => $con1['facebook'],
+    "btn-edit-profile" => $btn,
 
     
 ));

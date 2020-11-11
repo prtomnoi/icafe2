@@ -1,0 +1,9 @@
+RewriteEngine On 
+DirectoryIndex main.php
+RewriteRule something something.php [L]
+<IfModule mod_rewrite.c>  
+   RewriteEngine On  
+   RewriteCond %{REQUEST_FILENAME} !-d 
+   RewriteCond %{REQUEST_FILENAME} !-f 
+   RewriteRule (.*) $1.php [L]
+ </IfModule>
